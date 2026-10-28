@@ -2,7 +2,7 @@
 import { SoftwareEngineer } from "Careers";
 
 const me = new SoftwareEngineer({
-  name: "Ali ÖZKAN",
+  name: "Ali Ozkan",
   status: "AI/ML & Automation Enthusiast",
   skills: {
     languages: ["Python", "C", "C++", "C#", "SQL", "JavaScript"],
