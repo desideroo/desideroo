@@ -1,0 +1,36 @@
+# Bu dosyayı profil reponda şu yola koy:  .github/workflows/snake.yml
+# Sonra repoda Actions sekmesine gir, "Katki Yilani" workflow'unu seçip "Run workflow" ile bir kez elle çalıştır.
+# Ardından her gün otomatik güncellenir. Kişisel token gerekmez.
+
+name: Katki Yilani
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # her gün gece yarısı (UTC)
+  workflow_dispatch:       # elle çalıştırma butonu
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Yilan animasyonunu olustur
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: "output" dalina yukle
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
