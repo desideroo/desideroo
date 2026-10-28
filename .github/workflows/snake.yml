@@ -1,7 +1,3 @@
-# Bu dosyayı profil reponda şu yola koy:  .github/workflows/snake.yml
-# Sonra repoda Actions sekmesine gir, "Katki Yilani" workflow'unu seçip "Run workflow" ile bir kez elle çalıştır.
-# Ardından her gün otomatik güncellenir. Kişisel token gerekmez.
-
 name: Katki Yilani
 
 on:
