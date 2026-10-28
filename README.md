@@ -11,11 +11,6 @@ const me = new SoftwareEngineer({
     tools: ["Docker", "Git", "Linux", "Odoo", "Cisco"],
   },
   interests: ["AI/ML", "Data Analysis", "Automation", "Networking"],
-  contact: {
-    linkedin: "linkedin.com/in/ali-ozkann",
-    instagram: "@ali._ozknn",
-    email: "aliozkan7001@outlook.com",
-  },
 });
 ```
 
