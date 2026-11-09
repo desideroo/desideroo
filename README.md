@@ -3,14 +3,16 @@ import { SoftwareEngineer } from "Careers";
 
 const me = new SoftwareEngineer({
   name: "Ali Özkan",
-  status: "AI/ML & Automation Enthusiast",
-  skills: {
-    languages: ["Python", "C", "C++", "C#", "SQL", "JavaScript"],
-    ml: ["scikit-learn", "TensorFlow"],
-    data: ["Power BI", "Tableau"],
-    tools: ["Docker", "Git", "Linux", "Odoo", "Cisco"],
+  role: "Information Systems Engineer",
+  focus: ["Backend", "AI/ML", "Automation", "Web & Mobile"],
+  stack: {
+    languages: ["Python", "C#", "TypeScript", "SQL", "Kotlin", "C++"],
+    backend: ["FastAPI", "ASP.NET Core", "EF Core", "REST APIs"],
+    frontend: ["React", "Tailwind CSS", "Flutter", "Jetpack Compose"],
+    ai_ml: ["PyTorch", "YOLO", "scikit-learn", "XGBoost", "LLM agents"],
+    data: ["SQL Server", "pandas", "Qdrant", "SQLite"],
+    devops: ["Docker", "Git", "GitHub Actions", "pytest", "Linux"],
   },
-  interests: ["AI/ML", "Data Analysis", "Automation", "Networking"],
 });
 ```
 
@@ -31,18 +33,18 @@ const me = new SoftwareEngineer({
 ### 🚀 ~/projects
 ```text
 .
-├── 🔬 research/
-│   ├── 📂 skin-cancer-detection-tubitak-2209a .... Skin cancer detection (TÜBİTAK 2209-A)
-│   └── 📂 briganti-nomogram ...................... Briganti nomogram calculator
-├── 🤖 intelligence/
-│   ├── 📂 sakarya-house-price-prediction ......... House price prediction model
-│   ├── 📂 finansal-ajan .......................... Financial analysis agent
-│   └── 📂 otonom-arac-simulasyonu ................ Autonomous vehicle simulation
-├── 🌐 web-ecosystem/
-│   └── 📂 bb-shop ................................ E-commerce application
-├── ⚙️ automation/
-│   ├── 📂 tcdd-bilet-alarm ....................... Train ticket availability alert
-│   └── 📂 ag-otomasyon ........................... Network automation
-└── ☁️ coursework/
-    └── 📂 bulut-bilisim-odev ..................... Cloud computing project
+├── 🧠 ai-ml/
+│   ├── skin-cancer-detection-tubitak-2209a  CV ensemble · ONNX
+│   ├── finansal-ajan                        LLM agents · FastAPI
+│   └── sakarya-house-price-prediction       Scraping · XGBoost
+├── 🔧 backend-automation/
+│   ├── tcdd-bilet-alarm                     FastAPI · Flutter
+│   └── ag-otomasyon                         Python CLI · pytest
+├── 🌐 web/
+│   ├── bb-shop                              React · TypeScript
+│   └── briganti-nomogram                    Offline PWA · JS
+├── 🎮 simulation/
+│   └── otonom-arac-simulasyonu              Unity · C# · A*
+└── ☁️ cloud/
+    └── bulut-bilisim-odev                   OpenNebula · KVM
 ```
